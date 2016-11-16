@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leo.tea.MainActivity">
+    <LinearLayout
+        android:id="@+id/rela"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab"
+            app:tabSelectedTextColor="#0f6"
+            app:tabIndicatorColor="#0f6"
+            android:layout_width="0dp"
+            android:layout_weight="18"
+            android:layout_height="wrap_content"
+            app:tabTextColor="#888"
+            >
+
+        </android.support.design.widget.TabLayout>
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:src="@mipmap/more"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ViewPager"
+        android:layout_below="@id/rela"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

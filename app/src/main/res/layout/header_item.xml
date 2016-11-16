@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/headerViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </android.support.v4.view.ViewPager>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/headerViewPager"
+        android:background="#3888">
+        <TextView
+            android:id="@+id/textHeader"
+            android:layout_margin="10dp"
+            android:text="热点推荐"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/pageThree"
+            android:layout_margin="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@mipmap/page"/>
+        <ImageView
+            android:id="@+id/pageTwo"
+            android:layout_margin="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/pageThree"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@mipmap/page"/>
+        <ImageView
+            android:id="@+id/pageOne"
+            android:layout_margin="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/pageTwo"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@mipmap/page_now"/>
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
